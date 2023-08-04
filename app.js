@@ -27,7 +27,7 @@ app.use(methodOverride("_method"))
 app.use(flash());
 // seedDB();
 
-mongoose.connect('mongodb://localhost:27017/yelp_camp',{ useNewUrlParser: true });
+mongoose.connect('mongodb://localhost:27017/Amar_yelp_camp',{ useNewUrlParser: true });
 
 // mongoose.connect("mongodb+srv://amarsingh200021:amarsingh200021@devment-4htbk.mongodb.net/test?retryWrites=true&w=majority",{useNewUrlParser: true});
 
@@ -67,4 +67,5 @@ let port = process.env.PORT;
 if (port == null || port == "") {
   port = 3000;
 }
+console.log("Listening on port",port);
 app.listen(port);
